@@ -1,0 +1,542 @@
+@font-face {
+	font-family: "Cormorant";
+	font-style: normal;
+	font-variant: 400px;
+	src: url("../fonts/CormorantInfant-Regular.ttf") format(ttf);
+}
+
+@font-face {
+	font-family: "Lacquer";
+	font-style: cursive;
+	font-variant: 400px;
+	src: url("../fonts/Lacquer-Regular.ttf") format(ttf);
+}
+
+@font-face {
+	font-family: 'Cabin Sketch';
+	font-style: cursive;
+	font-variant: 400px;
+	src: url('../fonts/CabinSketch-Regular.ttf') format(ttf);
+}
+
+a:-webkit-any-link {
+	color: white;
+}
+
+body {
+	font-family: 'Lacquer', cursive;
+	color: #ededed;
+}
+
+.hedr {
+	font-family: "Lacquer", cursive;
+}
+
+.conteiner {
+	margin: 0 15%;
+}
+
+.conteiner02 {
+	margin: 0 240px;
+}
+
+.bgr {
+	background: #4D4D4D;
+}
+
+.h-top {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: stretch;
+}
+
+.h-t-left {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.logo-l {
+	display: flex;
+	margin: 10px 0;
+	flex-wrap: nowrap;
+	width: 132px;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+a.logo-l p {
+	transition: all .3s;
+}
+
+a.logo-l,
+path {
+	transition: all .3s;
+}
+
+a.logo-l:hover p {
+	color: #C7AA8B;
+}
+
+a.logo-l:hover path {
+	fill: white;
+}
+
+.logo {
+	font-size: 24px;
+	display: inline-block;
+	margin-right: 30px;
+	text-transform: uppercase;
+}
+
+.image-1 {
+	height: 23px;
+	width: 20px;
+	margin-left: 8px;
+	transform: translateY(-7%);
+}
+
+.list {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.list:first-of-type {
+	border-left: 1px solid #E5E5E5;
+}
+
+.l-link {
+	padding: 14px 30px;
+}
+
+.l-item a.l-link {
+	display: block;
+	padding: 14px 30px;
+}
+
+/* a{
+ padding: 15px;
+} */
+
+.l-item a:before {
+	position: absolute;
+	display: block;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+}
+
+.l-item {
+	color: white;
+	line-height: 20px;
+	border-right: 1px solid #E5E5E5;
+	cursor: pointer;
+}
+
+.visited {
+	background: #000;
+}
+.visited a svg > path{
+	fill: #fff;
+}
+
+/* .visited a{
+	color: #c7aa8b;
+} */
+
+.h-t-right {
+	justify-content: right;
+}
+
+.h-top a,
+path {
+	transition: all .3s;
+}
+
+.h-top li.l-item :hover {
+	background: #000;
+	color: #c7aa8b;
+}
+
+.h-top li :hover path {
+	fill: #c7aa8b;
+}
+
+.content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* position: absolute;
+	top: 80px;
+	left: 400px;
+	right: 400px; */
+}
+
+.heading {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: calc((10vw + 10vh) / 4);
+	line-height: 66px;
+	margin: 0 0 20px;
+	padding-top: 60px;
+	text-transform: uppercase;
+}
+
+.h-hr {
+	width: 60px;
+	/*
+	height: 2px; */
+	/* position: absolute;
+	top: 200px;
+	left: calc(50% - 60px/2); */
+}
+
+.par {
+	font-family: 'Lacquer', cursive;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 20px 50px;
+	text-transform: lowercase;
+}
+
+*::first-letter {
+	font-size: calc(100% + 4px);
+}
+
+.c-link {
+	margin-bottom: 50px;
+}
+
+.c-l-btn {
+	font-family: 'Lacquer', cursive;
+	text-transform: uppercase;
+	background: none;
+	padding: 10px 17px;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 16px;
+	line-height: 20px;
+	transition: all, .3s;
+}
+
+.c-l-btn:hover {
+	background: #000;
+	color: #c7aa8b;
+	border: 1px solid #c7aa8b;
+}
+
+.f-content {
+	background: #c7aa8b;
+	padding: 60px 0 80px;
+}
+
+.f-content .conteiner02 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.f-heading {
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 2vw;
+	line-height: 30px;
+	margin: 0 20px 40px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.f-content .column {
+	margin:0 20px;
+	width: calc(100%/4);
+	color: #4D4D4D;
+}
+
+.top {
+	font-family: 'Cabin Sketch', cursive;
+	color: #E5E5E5;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.f-hr {
+	background: #E5E5E5;
+	border: .5px solid #E5E5E5;
+	margin-top: 0;
+}
+.f-item-link> .f-c-title, .f-item-link> .f-par{
+	color: #000;
+}
+.f-item-link{
+	display: block;
+	background: radial-gradient(circle, #FFF 0%, #c7aa8b 90%, #c7aa8b 100%);
+	outline: 0px solid #ffffff00 ;
+	border-radius: 10px;
+	transition: all 0.4s ease-in-out;
+}
+.f-item-link:hover{
+	outline: 1px solid #FFF;
+	background: radial-gradient(circle, #000000 0%, #c7aa8b 90%, #c7aa8b 100%);
+}
+.f-item-link:hover > .f-c-title {
+	color: #FFF;
+}
+
+.f-c-title {
+	font-family: 'Cabin Sketch', cursive;
+	text-align: center;
+	font-size: 25px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin: 20px;
+}
+.f-c-title2{
+	font-family: 'Cabin Sketch', cursive;
+	text-align: center;
+	font-size: 22px;
+	line-height: 20px;
+	text-transform: lowercase;
+}
+
+.f-img {
+	display: block;
+	padding-top: 20px;
+	margin: 20px 15%;
+	width: 70%;
+}
+.f-img2{
+	display: block;
+	padding: 30px;
+	margin: auto;
+}
+
+.f-par {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.f-par2{
+	font-size: 14px;
+   line-height: 20px;
+   padding: 5px;
+   text-transform: lowercase;
+}
+
+.desing {
+	height: 200px;
+	background: url('../images/dimg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 40px;
+	line-height: 45px;
+	color: #c7aa8b;
+}
+.desing2{
+	background: linear-gradient(180deg, #c7aa8b 0%, #c7aa8b 50%, #323232 100%);
+}
+
+h3.d-par {
+	padding-top: 20px;
+	padding: 5%;
+	padding-bottom: 0;
+}
+
+.d-hr {
+	background: #c7aa8b;
+	border: .5px solid #c7aa8b;
+	width: 60px;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+
+.team .conteiner02 {
+	display: flex;
+	margin: 70px 10%;
+	color: #4D4D4D;
+}
+
+.team .column {
+	margin: 10px;
+	width: calc(100%/4);
+}
+
+.t-team {
+	font-size: 30px;
+	line-height: 27px;
+	font-family: 'Cabin Sketch', cursive;
+	margin-left: 15px;
+}
+
+.name {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+p.position {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+ul.sn {
+	list-style-type: none;
+	display: flex;
+	margin-top: 10px;
+}
+
+.sn-item {
+	margin-right: 5px;
+}
+
+.sn-link {
+	padding: 3px;
+	padding-top: 6px;
+	padding-bottom: 1px;
+	border-radius: 50px;
+}
+
+.twit {
+	transform: translateY(1.5px);
+}
+
+.sn-item:hover a {
+	background: #000;
+}
+
+.sn-item:hover path {
+	fill: #c7aa8b;
+}
+
+.testimonials {
+	text-align: center;
+	color: #4d4d4d;
+	background: #F7F7F7;
+}
+
+.testimonials .conteiner {
+	padding: 80px 0;
+}
+
+.t-tetini {
+	font-size: 15px;
+	line-height: 20px;
+	color: rgba(50, 50, 50, 0.36);
+	margin-bottom: 15px;
+}
+
+.t-hr {
+	width: 60px;
+	margin: auto;
+	margin-bottom: 25px;
+	/* position: re;
+	border: 1px solid rgba(50, 50, 50, 0.36);
+	background: rgba(50, 50, 50, 0.36);
+	left: calc(50% - 60px/2);
+	top: 2070px; */
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.flex .column {
+	width: 420px;
+}
+
+.t-f-par {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+h4 {
+	font-size: 13px;
+	line-height: 20px;
+	color: #c7aa8b;
+}
+
+.fot {
+	background: #323232;
+}
+
+.fot .conteiner02 {
+	padding: 2vh 0;
+
+}
+
+.fot a:-webkit-any-link {
+	color: #858585;
+}
+
+.f-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fl-link {
+	display: flex;
+}
+
+.fl-btn {
+	font-size: 16px;
+	line-height: 20px;
+	color: #C7AA8B;
+	background: inherit;
+	display: block;
+	padding: 10px 74px;
+	border: 1.5px solid #C7AA8B;
+	text-transform: uppercase;
+	transition: all, .3s;
+}
+
+.fl-img {
+	margin-right: 8px;
+	transform: translateY(-7%);
+}
+
+.sca14 {
+	font-size: 14px;
+	line-height: 20px;
+	transition: all, .3s;
+}
+
+.fli-1:hover path {
+	fill: #858585;
+}
+
+.fl-item:hover .sca14 {
+	color: white;
+}
+
+.fl-link:hover .fl-btn {
+	color: #323232;
+	background: #fff;
+	border: 1.5px solid rgb(255, 254, 178);
+}
+.info1-par{
+	margin-top: 40px;
+	font-size: 18px;
+}
+.info-d-par{
+	padding-top: 5%;
+	font-size: 2vw;
+}
+
