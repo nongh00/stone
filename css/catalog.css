@@ -84,7 +84,3 @@ li.catalog-item{
 .all-prod .column{
     width: calc(100% / 5);
 }
-.column.last{
-	margin-right: 76%;
-}
-
